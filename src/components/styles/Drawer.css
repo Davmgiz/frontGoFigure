@@ -1,0 +1,58 @@
+.DrawArea {
+  display: grid;
+  grid-template-columns: repeat(28, 20px);
+  grid-gap: 0px;
+
+  border-left: 1px solid black; /* Граница слева */
+  border-right: 1px solid black; /* Граница справа */
+  width: 562px;
+  }
+
+.Drawer {
+  padding-top: 5%;
+  padding-left: 14%;
+}
+
+.Clear {
+  width: 562px;
+  height: 30px;
+
+  border-left: 1px solid black; /* Граница слева */
+  border-right: 1px solid black; /* Граница справа */
+  border-bottom: 1px solid black; /* Граница снизу */
+
+
+  border-bottom-right-radius: 5px; /* Закругление нижнего правого угла */
+  border-bottom-left-radius: 5px; /* Закругление нижнего левого угла */
+
+  cursor: pointer;
+
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  color: black;
+
+}
+
+.Pred {
+  width: 562px;
+  height: 30px;
+
+  border-top: 1px solid black;
+  border-left: 1px solid black; /* Граница слева */
+  border-right: 1px solid black; /* Граница справа */
+  border-bottom: 1px solid black; /* Граница снизу */
+
+  border-top-left-radius: 10px; /* Закругление верхнего левого угла */
+  border-top-right-radius: 10px; /* Закругление верхнего правого угла */
+
+  text-align: center;
+
+  
+  display: grid;
+  place-items: center; /* Выравнивает содержимое по центру как по горизонтали, так и по вертикали */
+
+}
+
+.Pred .Clear {
+  user-select: none;
+}

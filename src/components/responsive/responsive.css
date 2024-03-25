@@ -1,0 +1,19 @@
+@media (max-width: 1150px) {
+    .WorkArea {
+        flex-direction: column;
+    }
+  
+    .Drawer {
+        padding-top: 5%;
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+
+    .Info {
+        padding-top: 5%;
+        padding-left: 5%;
+        padding-right: 5%;
+        max-width: 562px;
+    }
+  }
+  
