@@ -11,7 +11,7 @@ function Main() {
   const [isRightDrawing, setIsRightDrawing] = useState(false);
 
   // MouseDown обрабатывает нажатие кнопок мыши.
-  function MouseDown(event){
+  function handleMouseDown(event){
     switch (event.button) {
       case 0:
         console.log('Нажата левая кнопка мыши');
@@ -32,7 +32,7 @@ function Main() {
   }
 
   // MouseDown обрабатывает отпускание кнопок мыши.
-  function MouseUp(event){
+  function handleMouseUp(event){
     switch (event.button) {
       case 0:
         console.log('Отпущена левая кнопка мыши');
@@ -54,8 +54,8 @@ function Main() {
 
   return (
     <div className="Main"
-      onMouseDown={MouseDown} // вызывает обработчик нажатий кнопок мыши.
-      onMouseUp={MouseUp} // вызывает обработчик отпусканий кнопок мыши.
+      onMouseDown={handleMouseDown} // вызывает обработчик нажатий кнопок мыши.
+      onMouseUp={handleMouseUp} // вызывает обработчик отпусканий кнопок мыши.
       onDragStart={(e) => e.preventDefault()} // отключение drag and drop для безостановочного рисования.
     >
       <WorkArea 
